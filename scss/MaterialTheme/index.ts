@@ -166,12 +166,13 @@ export const light = {
 		},
 		MuiSelect: {
 			styleOverrides: {
-				root: {},
-				select: {
-					textAlign: 'left',
-				},
+			  root: {},
+			  select: ({ theme }) => ({
+				textAlign: 'left',
+			  }),
 			},
-		},
+		  },
+		  
 		MuiInputBase: {
 			styleOverrides: {
 				root: {

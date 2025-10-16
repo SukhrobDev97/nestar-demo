@@ -5,7 +5,7 @@ import { brown, green } from "@mui/material/colors";
 export default function Home() {
   return (
     <Stack sx={{ background: "#81c784" }}>
-      Header
+      Header Home
       <Container>
         <Stack flexDirection="column">
           <Box>Popular Properties</Box>
