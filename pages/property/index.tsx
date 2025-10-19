@@ -4,9 +4,9 @@ import { NextPage } from "next"
 
 const PropertyList: NextPage = () =>{
     return( 
-     <>
-        <Container>Property List</Container>
-     </>
+     <div style={{margin: "20px 0"}}>
+        <Stack className={"container"}>Property List</Stack>
+     </div>
     )
 }
 
