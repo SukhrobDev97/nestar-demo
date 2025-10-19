@@ -7,7 +7,7 @@ import typography from './typography';
  */
 export const light = {
 	palette: {
-		type: 'light',
+		mode: 'light',
 		background: {
 			default: '#f4f6f8',
 			paper: common.white,
@@ -164,14 +164,17 @@ export const light = {
 				},
 			},
 		},
+		
 		MuiSelect: {
 			styleOverrides: {
-			  root: {},
-			  select: ({ theme }) => ({
-				textAlign: 'left',
-			  }),
+			  select: {
+				"&.MuiSelect-select": {
+				  textAlign: "left",
+				},
+			  },
 			},
 		  },
+		  
 		  
 		MuiInputBase: {
 			styleOverrides: {
