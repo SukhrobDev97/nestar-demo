@@ -1,29 +1,25 @@
-
-import withLayoutMain from "@/libs/components/layout/LayOutHome";
-import { Box, Container, Stack } from "@mui/material";
-import { brown, green } from "@mui/material/colors";
+import { Stack } from "@mui/material";
 import { NextPage } from "next";
+// import TrendProperties from "@/libs/components/homepage/TrendProperties";
+// import PopularProperties from "@/libs/components/homepage/PopularProperties";
+// import Advertisement from "@/libs/components/homepage/Advertisement";
+// import TopProperties from "@/libs/components/homepage/TopProperties";
+// import TopAgents from "@/libs/components/homepage/TopAgents";
+// import "swiper/css";
+// import "swiper/css/pagination";
+// import "swiper/css/navigation";
+import withLayoutMain from "@/libs/components/layout/LayOutHome";
 
-const  Home: NextPage = () => {
+const Home: NextPage = () => {
   return (
-    <>
-      <Stack>
-        <Stack flexDirection="column">
-          
-          <Stack>
-            <Stack className="container">Popular Properties</Stack>
-          </Stack>
-          <Stack>
-            <Stack className="container">Top Agents</Stack>
-          </Stack>
-          <Stack>
-            <Stack className="container">Top Properties</Stack>
-          </Stack>
-         
-        </Stack>
-      </Stack>    
-    </>
+    <Stack className={"home-page"}>
+      {/* <TrendProperties />
+      <PopularProperties />
+      <Advertisement />
+      <TopProperties />
+      <TopAgents /> */}
+    </Stack>
   );
-}
+};
 
-export default withLayoutMain(Home)
+export default withLayoutMain(Home);
