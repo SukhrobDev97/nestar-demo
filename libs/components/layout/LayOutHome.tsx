@@ -2,7 +2,7 @@ import { Stack } from "@mui/material"
 import  Head  from "next/head"
 import Footer from "../Footer"
 import Top from "../Top"
-import HeaderFilter from "../homePage/headerFilter"
+import HeaderFilter from "../homePage/HeaderFilter"
 
 const withLayoutMain = (Component : any) =>{
     return (props: any) => {
